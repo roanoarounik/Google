@@ -1,7 +1,23 @@
+:root {
+    --red: rgb(234, 67, 53);
+    --green: rgb(52, 168, 83);
+    --blue: rgb(66, 133, 244);
+    --yellow: rgb(251, 188, 5);
+}
+
+.red { color: var(--red); }
+.green { color: var(--green); }
+.blue { color: var(--blue); }
+.yellow { color: var(--yellow); }
+
 body {
+    display: grid;
     margin: 0 auto;
-    font-family: Arial, Helvetica, sans-serif;
     font-size: 15px;
+    min-height: 100dvh;
+    align-items: center;
+    grid-template-rows: 75px 1fr 75px;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 header {
@@ -28,7 +44,7 @@ nav {
     color: white;
 }
 
-button {
+.blueButton {
     border: none;
     background: #0b57d0;
     padding: 10px 19px;
@@ -48,4 +64,63 @@ button {
 
 .gridDots:hover .middleDots {
     margin: -20px 0;
+}
+
+section {
+    display: flex;
+    grid-gap: 30px;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.googleLogo {
+    display: flex;
+    grid-gap: 1px;
+    font-weight: 500;
+    font-size: 70px;
+}
+
+form {
+    display: flex;
+    grid-gap: 20px;
+    min-width: 600px;
+    flex-direction: column;
+}
+
+.search {
+    gap: 10px;
+    border: none;
+    padding: 10px;
+    display: grid;
+    border-radius: 20px;
+    box-shadow: 0px 2px 8px 0px rgba(60, 64, 67, 0.25);
+    grid-template-columns: auto 1fr auto auto;
+}
+
+.searchIcon {
+    color: gray;
+}
+
+input {
+    border: 0;
+    width: 100%;
+}
+
+.formButtons {
+    display: flex;
+    grid-gap: 10px;
+    justify-content: center;
+}
+
+button {
+    border: none;
+    padding: 5px 15px;
+    border-radius: 4px;
+}
+
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
