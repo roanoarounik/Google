@@ -34,3 +34,18 @@ button {
     padding: 10px 19px;
     border-radius: 100px;
 }
+
+.gridDots {
+    grid-gap: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.middleDots {
+    margin: -10px 0;
+    transition: 300ms ease-in-out;
+}
+
+.gridDots:hover .middleDots {
+    margin: -20px 0;
+}
