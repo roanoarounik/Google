@@ -123,4 +123,5 @@ footer {
     display: flex;
     align-items: center;
     justify-content: center;
+    grid-gap: 10px;
 }
